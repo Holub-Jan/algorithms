@@ -3,7 +3,8 @@ class Search:
         # To be removed if not needed
         pass
 
-    def binary(self, lst, to_find):
+    @staticmethod
+    def binary(lst, to_find):
         if not lst:
             return 'not found'
 
@@ -12,26 +13,26 @@ class Search:
         mid = (low + high) // 2
 
         while to_find not in [lst[mid], lst[low], lst[high]]:
-            if to_find > mid:
-                low = mid + 1
+            if to_find > lst[mid]:
+                low = mid
             else:
-                high = mid - 1
+                high = mid
 
-            mid = lst[(low + high) // 2]
+            mid = (low + high) // 2
 
-        if mid == to_find:
+        if lst[mid] == to_find:
             return mid
-        elif low == to_find:
+        elif lst[low] == to_find:
             return low
-        elif high == to_find:
+        elif lst[high] == to_find:
             return high
 
         return 'not found'
 
 
-tests = [[[3, 6, 2, 9, 12, 8, 0, 5, 1, 15, 20], 5],
-         [[12, 11, 13, 5, 6, 7], 12],
-         [[21, 1, 22, 23, 3, 4, 7, 6, 5, 25], 25],
+tests = [[[0, 1, 2, 3, 5, 6, 8, 9, 12, 15, 20], 5],
+         [[5, 6, 7, 11, 12, 13], 5],
+         [[1, 3, 4, 5, 6, 7, 21, 22, 23, 25], 25],
          [[], 1],
          [[1], 1],
          [[5, 5, 5, 5, 5, 5], 5]]

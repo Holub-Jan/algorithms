@@ -36,10 +36,7 @@ class Sort:
             return lst
 
         comp = lst[0]
-        # less = [value for value in lst[1:] if value < comp]
         less = list()
-
-        # more = [value for value in lst[1:] if value >= comp]
         more = list()
 
         for value in lst[1:]:
