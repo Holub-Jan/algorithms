@@ -1,4 +1,4 @@
-name: not used
+name: calling workflow
 on: workflow_dispatch
 jobs:
   runs-on: ubuntu-latest
