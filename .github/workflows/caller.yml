@@ -1,0 +1,11 @@
+name: calling workflow
+on: push
+jobs:
+  caller:
+    uses: Holub-Jan/test-repo/.github/workflows/test.yml@main
+    secrets: inherit
+  context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dumb Github context
+        run: echo '${{ toJSON(github) }}'
