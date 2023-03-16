@@ -1,5 +1,5 @@
 name: calling workflow
-on: [push, workflow_dispatch]
+on: [push]
 jobs:
   caller:
     uses: Holub-Jan/test-repo/.github/workflows/test.yml@main
