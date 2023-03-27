@@ -4,5 +4,4 @@ jobs:
   caller:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: Holub-Jan/test-repo@main
+      - uses: Holub-Jan/test-repo@v1.1
