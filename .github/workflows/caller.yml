@@ -6,4 +6,3 @@ jobs:
     steps:
       - name: compo action
         uses: Holub-Jan/test-repo@main
-  
