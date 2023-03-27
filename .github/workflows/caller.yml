@@ -3,4 +3,3 @@ on: push
 jobs:
   caller:
     uses: Holub-Jan/test-repo/.github/workflows/test.yml@main
-    secrets: inherit
