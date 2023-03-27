@@ -2,4 +2,4 @@ name: calling workflow
 on: push
 jobs:
   caller:
-    uses: Holub-Jan/test-repo/actions/test/caller.yml@main
+    uses: Holub-Jan/test-repo/.github/actions/test/caller.yml@main
