@@ -4,5 +4,7 @@ jobs:
   caller:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3.4.0
       - name: compo action
         uses: Holub-Jan/test-repo@main
