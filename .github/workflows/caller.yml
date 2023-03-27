@@ -2,7 +2,5 @@ name: calling workflow
 on: push
 jobs:
   caller:
-    runs-on: ubuntu-latest
-    steps:
-      - name: compo action
-        uses: Holub-Jan/test-repo/.github/workflows/test.yml@main
+    uses: Holub-Jan/test-repo/.github/workflows/test.yml@main
+
