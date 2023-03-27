@@ -2,4 +2,6 @@ name: calling workflow
 on: push
 jobs:
   caller:
-    - uses: Holub-Jan/test-repo@main
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Holub-Jan/test-repo@main
